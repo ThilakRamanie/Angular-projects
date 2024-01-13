@@ -1,5 +1,5 @@
 <style>
-  h2{
+  h2 {
     text-align: center;
   }
 </style>
@@ -10,7 +10,7 @@
   <article id="{{ $index }}">
     <div class="article-wrapper">
       <figure>
-        <img src="https://picsum.photos/id/1011/800/450" alt="" />
+        <img src="../assets/project_img.webp" alt="" />
       </figure>
       <div class="article-body">
         <h2>{{ project.title }}</h2>
@@ -18,9 +18,21 @@
           {{ project.description }}
         </p>
         <div class="link">
-          <a href="{{ project.githubURL }}" class="read-more git"> github </a>
+          <a
+            href="{{ project.githubURL }}"
+            class="read-more git"
+            target="_blank"
+          >
+            github
+          </a>
           @if(project.liveURL.length>0) {
-          <a href="{{ project.liveURL }}" class="read-more live"> Live site </a>
+          <a
+            href="{{ project.liveURL }}"
+            class="read-more live"
+            target="_blank"
+          >
+            Live site
+          </a>
           }
         </div>
       </div>

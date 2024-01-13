@@ -113,7 +113,10 @@ body {
   }
 }
 
-@container card (min-width: 380px) {
+@container card (min-width: 600px) {
+  .articles {
+    grid-template-columns: 1fr;
+  }
   .article-wrapper {
     display: grid;
     grid-template-columns: 100px 1fr;
