@@ -201,6 +201,13 @@ export class AppComponent {
 
   uiProjects = [
     {
+      id:'CV Maker',
+      title:'CV Maker',
+      description: 'A web app to create a well formatted resume in minutes. you can also download your resume in pdf format or print it.',
+      liveURL: 'https://cv-builder-react.netlify.app/',
+      githubURL: 'https://github.com/ThilakRamanie/CV-Builder',
+    },
+    {
       id: '1',
       title: 'User management',
       description: `User-friendly web application using React for seamless user management. This intuitive platform enables efficient user addition and management, enhancing overall usability and administrative control.`,
