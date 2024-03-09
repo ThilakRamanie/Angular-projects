@@ -1,4 +1,98 @@
-<style>
+<h1 class="projectHeader">Projects</h1>
+<mat-tab-group [color]="'warn'" [backgroundColor]="'primary'" class="matHeader">
+  <mat-tab class="mat-tab" label="React/Angular">
+    <div class="grid-list">
+      <div class="ag-format-container">
+        <div class="ag-courses_box">
+          @for (project of uiProjects; track $index) {
+          <div class="ag-courses_item">
+            <section class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+              <div class="ag-courses-item_title">
+                {{ project.title }}
+              </div>
+
+              <div class="ag-courses-item_date-box">
+                <span class="ag-courses-item_date">
+                  {{ project.description }}
+                </span>
+              </div>
+              <div class="links">
+                <a href="{{ project.githubURL }}" target="_blank">Git</a>
+                @if(project.liveURL.length>0) {
+                <a href="{{ project.liveURL }}" target="_blank">Demo</a>
+                }
+              </div>
+            </section>
+          </div>
+          }
+        </div>
+      </div>
+    </div>
+  </mat-tab>
+  <mat-tab label="Node.js">
+    <div class="grid-list">
+      <div class="ag-format-container">
+        <div class="ag-courses_box">
+          @for (project of nodeProjects; track $index) {
+          <div class="ag-courses_item">
+            <section class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+              <div class="ag-courses-item_title">
+                {{ project.title }}
+              </div>
+
+              <div class="ag-courses-item_date-box">
+                <span class="ag-courses-item_date">
+                  {{ project.description }}
+                </span>
+              </div>
+              <div class="links">
+                <a href="{{ project.githubURL }}" target="_blank">Git</a>
+                @if(project.liveURL.length>0) {
+                <a href="{{ project.liveURL }}" target="_blank">Demo</a>
+                }
+              </div>
+            </section>
+          </div>
+          }
+        </div>
+      </div>
+    </div>
+  </mat-tab>
+  <mat-tab label="Browser Extension">
+    <div class="grid-list">
+      <div class="ag-format-container">
+        <div class="ag-courses_box">
+          @for (project of extensionProjects; track $index) {
+          <div class="ag-courses_item">
+            <section class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+              <div class="ag-courses-item_title">
+                {{ project.title }}
+              </div>
+
+              <div class="ag-courses-item_date-box">
+                <span class="ag-courses-item_date">
+                  {{ project.description }}
+                </span>
+              </div>
+              <div class="links">
+                <a href="{{ project.githubURL }}" target="_blank">Git</a>
+                @if(project.liveURL.length>0) {
+                <a href="{{ project.liveURL }}" target="_blank">Demo</a>
+                }
+              </div>
+            </section>
+          </div>
+          }
+        </div>
+      </div>
+    </div>
+  </mat-tab>
+</mat-tab-group>
+
+<!-- <style>
   h2 {
     text-align: center;
   }
@@ -42,4 +136,4 @@
   <h1>Error loading products!</h1>
   }
 </section>
-<router-outlet></router-outlet>
+<router-outlet></router-outlet> -->
