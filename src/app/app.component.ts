@@ -208,6 +208,13 @@ export class AppComponent {
       githubURL: 'https://github.com/ThilakRamanie/CV-Builder',
     },
     {
+      id:'Goals tsx',
+      title:'Goals',
+      description: 'Goals web application to save your goals and delete them upon achieving it. The web app leverages react, typescript and localstorage',
+      liveURL: 'https://goals-tsx.netlify.app/',
+      githubURL: 'https://github.com/ThilakRamanie/Goals-app',
+    },
+    {
       id: '1',
       title: 'User management',
       description: `User-friendly web application using React for seamless user management. This intuitive platform enables efficient user addition and management, enhancing overall usability and administrative control.`,
